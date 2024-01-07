@@ -1,0 +1,84 @@
+#CLEAR FL1
+#CLEAR FL2
+#CLEAR FL3
+#CLEAR FL4
+#SET FL4
+#SET FL1013
+#CLEARBKG
+#LOADBKG title@@
+:menu
+Elija entre 5 elementos del menu
+!newGame;1.Iniciar el juego
+!music;2.Seleccion de musica
+!sound;3.Sonido
+!instruction;4.Instrucciones
+!information;5.Informacion
+/i
+
+:music
+Elige una de las 4 pistas
+!zCasanov;1.zCasanov
+!zGirl;2.zGirl
+!zJack;3.zJack
+!zTadzhik;4.zTadzhik
+/i
+:zCasanov
+#SET FL1
+#GOTO menu
+:zGirl
+#SET FL2
+#GOTO menu
+:zJack
+#SET FL3
+#GOTO menu
+:zTadzhik
+#SET FL4
+#GOTO menu
+
+:sound
+Atencion, si selecciona "Activar musica", no podra apagarla hasta que se reinicie el juego. La musica esta activada de forma predeterminada
+!soundON;Enciende la musica
+!soundOFF;Apagar la música
+/i
+:soundON
+#SET FL1013
+#GOTO menu
+:soundOFF
+#CLEAR FL1013
+#STOPMUSIC
+#GOTO menu
+
+:instruction
+El objetivo del juego es muy simple: Echar un polvo! El juego consiste en dos modos: Un comic interactivo y un modo arcade. Confirma tu eleccion presionando FUEGO o 5. Las flechas y frases parpadeantes indican las posibilidades del eleccion (DERECHA / IZQUIERDA). Feliz caza!
+/i
+#GOTO menu
+
+:information
+Casanova sex toys v.5.7.9.19.20
+Ported by SegaMark
+Donate: www.donationalerts.com/r/segamark6
+All Rights Reserved (c)
+DirtyConverter v.5.0.8590.34411
+/i
+#GOTO menu
+
+:newGame
+#IF NOT FL1013 #RETURN
+#IF FL1 #GOTO LzCasanov
+#IF FL2 #GOTO LzGirl
+#IF FL3 #GOTO LzJack
+#IF FL4 #GOTO LzTadzhik
+
+:LzCasanov
+#LOOPMUSIC zCasanov
+#RETURN
+:LzGirl
+#LOOPMUSIC zGirl
+#RETURN
+:LzJack
+#LOOPMUSIC zJack
+#RETURN
+:LzTadzhik
+#LOOPMUSIC zTadzhik
+#RETURN
+#END

@@ -1,0 +1,504 @@
+:000
+#CLEARBKG
+#LOADBKG A@
+(Salut, c'est Casanova !)
+(Comme tu le sais, j'aime courir les jupons.)
+:001
+(Aujourd'hui, c'est mon jour de libre.)
+(Je pense juste flemmarder aujourd'hui.)
+/i
+#GOTO 006
+:002
+#CLEARBKG
+#LOADBKG A@
+(C'est quoi cette...? Je suis de retour dans mon appart' !)
+(Mon aventure n'etait donc qu'un reve ?)
+:003
+(Si non, cela veut dire que Maximus va bientot prendre le controle du monde !)
+(J'ai du faire une enorme erreur, a un moment donne !)
+/i
+#GOTO 096
+:004
+#CLEARBKG
+#LOADBKG A@
+(C'est quoi cette...? Je suis de retour dans mon appart' !)
+(Mon aventure n'etait donc qu'un reve ?)
+:005
+(Si non, cela veut dire que je viens juste de sauver le monde de Maximus !)
+(Je suis un heros ! Aucunes filles ne me resisteront !)
+/i
+#GOTO 097
+/i
+:006
+#CLEARBKG
+#LOADBKG B@
+(Une blondasse apparait a l'ecran.)
+-Casanova, j'ai une mission pour toi !
+:007
+-C'est quoi ce truc ? T'es qui toi ?
+-Ce n'est pas important pour le moment... T'as entendu parler de Marcus Maximus ?
+:008
+-Le super criminel qui fait des ravages ? Bien sur j'en ai entendu parler.
+-Il a vole un composant electronique qu'il peut utiliser pour dominer le monde. Tu dois l'arreter !
+:009
+-Mais pourquoi moi ? Je suis juste un mec normal.
+-Ton experience avec les femmes te sera tres utile dans cette mission. On a tous besoin de toi !
+:010
+-Mais ou trouver Maximus ?
+-Il a ete vu pour la derniere dans la boite nuit Underworld.
+:011
+-Il y a des rumeurs que Maximus travaille de paire avec Blumenfeld, le voleur de bijoux. Dois-je l'inrterrogee en premier ?
+-Je sais de source sure que Blumenfeld lui rend visite souvent. Quel est ton plan ?
+'Выбор 12
+:012
+!choice19;VA AU SALON DE MASSAGE
+!choice13;VAS AU CLUB UNDERGROUND
+/i
+:choice19
+Bonne chance, Casanova !
+/i
+#GOTO 019
+:choice13
+Bonne chance, Casanova !
+/i
+#GOTO 013
+/i
+:013
+#CLEARBKG
+#LOADBKG C@
+PLUS TARD
+(J'aime bien la fille derriere le bar... Que dois-je faire ?)
+'Выбор 14
+:014
+!choice15;FLIRTE AVEC ELLE
+!choice17;POSE-LUI DES QUESTIONS
+/i
+:choice15
+(J'invite la fille.)
+/i
+#GOTO 015
+:choice17
+(Attends...A qui dois-je demander ?)
+/i
+#GOTO 017
+:015
+(Elle dit qu'elle bosse tard ce soir.)
+(Je lui demande, si elle peut, au moins, me filer son numero de telephone.)
+:016
+(La fille sourit et accepte.)
+(Je lui promets de l'appeler sous peu.)
+/i
+#GOTO 018
+'Выбор 17
+:017
+Faites votre choix
+!choice18_0;MAXIMUS, LE GENIE MALEFIQUE
+!choice18_1;BLUMENFELD, LE VOLEUR SEDUISANT
+/i
+:choice18_0
+(La fille me dit qu'elle n'a pas vu Maximus depuis belle lurette.)
+/i
+#GOTO 018
+:choice18_1
+(La fille me dit qu'elle n'a jamais vu Blumenfeld au club.)
+/i
+#GOTO 018
+:018
+(J'en ai fini pour ici. Il est l'heure de partir !)
+(Je bois mon verre et pars.)
+/i
+#GOTO 037
+/i
+:019
+#CLEARBKG
+#LOADBKG D@
+PLUS TARD
+(La fille me demande si je suis la pour le job.)
+'Выбор 20
+:020
+!choice21;JE LUI DIS QUE OUI
+!choice23;JE LUI DIS QUE NON
+/i
+:choice21
+(Elle pense que je suis nouveau.)
+/i
+#GOTO 021
+:choice23
+(Je lui explique que j'aimerais seulement poser quelques questions sur...)
+/i
+#GOTO 023
+:021
+(C'est super ! J'adore masser des belles femmes.)
+(Ma premiere cliente sera Blumenfeld en personne.)
+:022
+(Si je pouvais etre toujours aussi chanceux...)
+(De toute facon, j'espere que Blumenfeld ne s'apercevra pas que je suis en mission secrete.)
+/i
+#GOTO 025
+'Выбор 23
+:023
+Faites votre choix
+!choice24_0;MAXIMUS, LE GENIE MALEFIQUE
+!choice24_1;BLUMENFELD, LE VOLEUR SEDUISANT
+/i
+:choice24_0
+(La fille me dit qu'elle ne sait pas de qui je parle.)
+/i
+#GOTO 024
+:choice24_1
+(La fille me dit qu'elle aurait des problemes si elle me disait quoique ce soit.)
+/i
+#GOTO 024
+:024
+(On dirait que je ne tirerais aucune info ici.)
+(Il est l'heure ! Je quitte le salon.)
+/i
+#GOTO 037
+/i
+:025
+#CLEARBKG
+#LOADBKG E@
+-(Bonjour ! Une envie speciale ?
+-Commence lentement. Je veux me detendre.
+/i
+:026
+#PROGCALL MG1_FR
+#IF FL27 #GOTO 027
+#IF FL30 #GOTO 030
+#IF FL30 #GOTO 030
+/i
+:027
+#PROGCALL MG2_FR
+#IF FL30 #GOTO 030
+#IF FL28 #GOTO 028
+#IF FL30 #GOTO 030
+/i
+:028
+#PROGCALL MG3_FR
+#IF FL30 #GOTO 030
+#IF FL30 #GOTO 030
+#IF FL29 #GOTO 029
+:029
+(Blumenfeld me remercie et part, satisfaite du service.)
+(Je decide de la suivre.)
+/i
+#GOTO 034
+:030
+#CLEARBKG
+#LOADBKG E@
+(Blumenfeld se leve et part, pas satisfaite par le service.)
+(Je decide de la suivre.)
+/i
+:031
+#CLEARBKG
+#LOADBKG F@
+(Malheureusement, des mecs m'encerclent dans une allee.)
+-Casanova, je presume? Tu es tombe dans mon piege !
+:032
+-Attends une minute... Tu es Marcus Maximus !
+-Oui ! Tu ne vas plus te meler de mes plans desormais !
+:033
+-Pourquoi en es-tu si sur ?
+-Parce qu'a partir de maintenant, tu es mon prisonnier !
+/i
+#GOTO 040
+:034
+#CLEARBKG
+#LOADBKG F@
+(Malheureusement, des mecs m'encerclent dans une allee.)
+-Casanova, je presume? Tu es tombe dans mon piege !
+:035
+-Attends une minute... Tu es Marcus Maximus !
+-Oui ! Tu ne vas plus te meler de mes plans desormais !
+:036
+-Pourquoi en es-tu si sur ?
+-Parce qu'a partir de maintenant, tu es mon prisonnier !
+/i
+#GOTO 043
+:037
+#CLEARBKG
+#LOADBKG F@
+(Malheureusement, des mecs m'encerclent dans une allee.)
+-Casanova, je presume? Tu es tombe dans mon piege !
+:038
+-Attends une minute... Tu es Marcus Maximus !
+-Oui ! Tu ne vas plus te meler de mes plans desormais !
+:039
+-Pourquoi en es-tu si sur ?
+-Parce qu'a partir de maintenant, tu es mon prisonnier !
+/i
+#GOTO 046
+/i
+:040
+#CLEARBKG
+#LOADBKG G@
+(Maximus me menotte et m'amene dans sa cachette secrete.)
+-Des que j'aurai efface tout cela de ta memoire, la victoire sera mienne !
+:041
+-Non, stp ! Blumenfeld, ne le laisse pas faire cela !
+-Pourquoi je t'aiderai ? Tu ne pouvais meme pas me masser correctement !
+:042
+(J'ai foire ma mission ! C'est fini !)
+-Ah ! Bonne nuit, Casanova !
+/i
+#GOTO 002
+:043
+#CLEARBKG
+#LOADBKG G@
+(Maximus me menotte et m'amene dans sa cachette secrete.)
+-Des que j'aurai efface tout cela de ta memoire, la victoire sera mienne !
+:044
+-Non, stp ! Blumenfeld, ne le laisse pas faire cela !
+-Tu es un tres bon masseur... Je pense que je pourrais te trouver des trucs a faire.
+:045
+Blumenfeld demande a Maximus si elle peut m'emmener dans sa chambre.)
+-Je ne peux rien te refuser, Blumenfeld. Fais comme tu veux.
+/i
+#GOTO 048
+:046
+#CLEARBKG
+#LOADBKG G@
+(Maximus me menotte et m'amene dans sa cachette secrete.)
+-Des que j'aurai efface tout cela de ta memoire, la victoire sera mienne !
+:047
+(J'ai foire ma mission ! C'est fini !)
+-Ah ! Bonne nuit, Casanova !
+/i
+#GOTO 002
+/i
+:048
+#CLEARBKG
+#LOADBKG H@
+DANS LE CHAMBRE PRIVEE DE BLUMENFELD
+-Que devrions faire mon beau ?
+'Выбор 49
+:049
+!choice54;S'EMBRASSER
+!choice50;PARLER
+/i
+:choice54
+Interessant, j'avais la meme idee...
+/i
+#GOTO 054
+:choice50
+T'es serieux ? Tu es seul, ici, avec moi, et tu veux parler ?
+/i
+#GOTO 050
+:050
+-Je me demande juste...Comment Maximus prevoit de renverser le monde ?
+-Il doit obtenir le pistolet de l'amour pour pouvoir controler tous les cerveaux des femmes politiciennes.
+:051
+-Pistolet de l'amour ? Comment ca marche ?
+-C'est comme les fleches de Cupidon. Un tir et cela permet de succomber a l'amour pour toujours.
+:052
+-Ca a l'air tres interessant.
+-En effet. Je suis sur que je pourrais me faire au moins quelques millions pour cela.
+:053
+-Alors pourquoi ne le vole-tu pas a Maximus et le vendre par la suite ? Je peux t'aider.
+-J'aime ta maniere de penser... Faisons-le !
+/i
+#GOTO 060
+/i
+:054
+#CLEARBKG
+#LOADBKG I@
+(Que puis-je dire... J'ai toujours aime les vilaines filles.)
+(Et elle est la plus honnete de toutes celles que j'ai rencontrees !)
+:055
+-Oh, Blumenfeld... Tu es belle.
+-Les flatteries ne te meneront nulle part, Casanova.
+:056
+(Hm, donc elle aime se la jouer dur...)
+(Essayons de voir si j'arrive a la charmer avec mon baratin.)
+:057
+-Pourquoi ne me detacherais-tu pas ? Nous pourrions avoir bien plus de plaisir.
+-Te detacher ? Jamais ! Je te ramene a Maximus.
+:058
+-Pourquoi ? Tu ne m'aimes plus ?
+-Peut-etre oui, mais je prefere Maximus.
+:059
+-Comment peux-tu etre si froide ?
+-C'est le seul moyen d'etre riche... Allons voir Maximus.
+/i
+#GOTO 042
+/i
+:060
+#CLEARBKG
+#LOADBKG J@
+(Ensemble, nous arrivons a controler Marcus.)
+-Les mains en l'air, Maximus !
+:061
+-Tu ferais mieux de faire ce qu'elle dit, sinon !
+-Je me rends ! Ne me blessez pas !
+:062
+-Que devrions-nous faire avec lui, Blumenfeld ?
+-J'en suis pas sure... Tu decides !
+'Выбор 63
+:063
+!choice64;LAISSE-LE PARTIR
+!choice65;APPELER LA POLICE
+/i
+:choice64
+Tu vas me liberer ? Mais pourquoi ?
+/i
+#GOTO 064
+:choice65
+Non ! Je ne veux pas aller en prison !
+/i
+#GOTO 065
+:064
+-Disons que c'est une tres bonne lecon pour toi. Pars maintenant, avant que je ne change d'avis !
+-Vite, Casanova ! Nous devons partir !
+/i
+#GOTO 066
+:065
+#CLEARBKG
+#LOADBKG J@
+#SET FL99
+-Tu aurais du y penser avant de choisir le crime !
+-Vite, Casanova ! Nous devons partir !
+/i
+:066
+#CLEARBKG
+#LOADBKG K@
+(Nous entrons dans la voiture et nous echappons de la cachette.)
+-Ah ah ! Nous faisons une super equipe !
+:067
+-Tu es la meilleure, Blumenfeld !
+(Maintenant, je dois decider de la suite...)
+:068
+(Je pourrais aider Blumenfeld a vendre le pistolet de l'amour et partager les profits avec elle.)
+(Comme cela, je pourrais me faire assez de tunes pour le reste de mes jours.)
+:069
+(Mais ce n'est pas la seule option...)
+(Le pistolet de l'amour est a ma portee. Je peux essayer de l'utiliser sur Blumenfeld.)
+:070
+(Ca la rendrait impuissante et je pourrais m'enfuir avec le pistolet de l'amour en ma possession.)
+(Alors que dois-je faire ? Vendre le pistolet de l'amour avec Blumenfeld ou le garder pour moi ?)
+'Выбор 71
+:071
+!choice78;GARDE-LE
+!choice72;VENDS-LE
+/i
+:choice78
+(Il n'y a pas d'autre choix... Je trompe Blumenfeld.)
+/i
+#GOTO 078
+:choice72
+(Il n'y a pas d'autres choix... J'aide Blumenfeld a vendre le pistolet de l'amour.)
+/i
+#GOTO 072
+/i
+:072
+#CLEARBKG
+#IF FL99 #LOADBKG P@
+#IF NOT FL99 #LOADBKG L@
+#CLEAR FL99
+UN AN PLUS TARD
+(Et me voila. Super riche et heureux.)
+:073
+(Blumenfeld est ma copine maintenant.)
+(Nous vivons ensemble dans une maison pres de la plage.)
+:074
+(La vie est belle avec elle !)
+-Salut mon amour ! Comment ca va ?
+:075
+-Comme toujours, ca va super bien.
+-Attends... Pourquoi tu me regardes comme cela ?
+:076
+-J'ai des pensees sales a chaque fois que je te vois.
+-Ah ah ! Nous devrions remedier a cela...
+:077
+-Donne-moi un baiser...
+(Soudainement, je me sens faible.)
+/i
+#GOTO 004
+/i
+:078
+#CLEARBKG
+#LOADBKG M@
+-Je suis desole, mais j'ai besoin de ce jouet.
+-Tu viens de faire une terrible erreur !
+:079
+-Que veux-tu dire ?
+-Tu ne seras jamais capable de le vendre sans mon aide. Tu vas en faire quoi ?
+:080
+(Bonne question. Attends...)
+(Je devrais probablement utiliser le pistolet de l'amour sur la blonde qui m'a envoye pour cette mission.)
+:081
+Cependant, je peux aussi l'utiliser pour faire succomber toutes les filles du monde.)
+(Apres tout, c'est tout ce que je desire.)
+:082
+(C'est chaud ! Je ne sais pas quoi faire !)
+(Devrais-je donner le pistolet de l'amour a la blonde ou l'utiliser pour me choper les filles ?)
+'Выбор 83
+:083
+!choice84;UTILISE-LE POUR CHOPER LES FILLES
+!choice90;DONNE-LE A LA BLONDE
+/i
+:choice84
+(Ouais, a fond... C'est ce que je vais faire !)
+/i
+#GOTO 084
+:choice90
+(Je la contacte et elle me dit de la rencontrer dans un endroit secret. J'y vais.)
+/i
+#GOTO 090
+/i
+:084
+#CLEARBKG
+#LOADBKG N@
+UN AN PLUS TARD
+(Et me voila. Le mec le plus desire du monde.)
+:085
+(Maintenant que j'ai le pistolet de l'amour, aucune fille ne peut me resister !)
+(Apres tout, je peux finalement devenir un vrai Casanova.)
+:086
+(La vie n'a jamais ete aussi bonne !)
+(Toutes les filles me veulent.)
+:087
+(Blondes, brunes, rousses... Je peux juste choisir !)
+(Regarde moi ces bonnasses ! Elles sont pas a croquer ?)
+:088
+-Ok, les filles... Amusons-nous un peu !
+(Ca s'annonce etre bien sympa.)
+:089
+(Mais attends un peu... Y'a une couille !)
+(Soudainement, je me sens faible.)
+/i
+#GOTO 004
+/i
+:090
+#CLEARBKG
+#LOADBKG O@
+(La blonde ne perd pas de temps.)
+-Oh Casanova... Laisse-moi te montrer combien je suis fiere de toi !
+:091
+-Tres, tres, tres, fiere, de ce que je peux voir.
+-Ah ah ! Je m'echauffe, mon beau !
+:092
+-J'aime ce que j'entends !
+-Oh, Casanova...
+:093
+-Je pourrais m'habituer a etre un agent secret.
+-J'aurai peut-etre une nouvelle mission pour toi, bientot.
+:094
+-On pourra en parler plus tard. Amusons-nous !
+(Ca s'annonce etre bien sympa.)
+:095
+(Mais attends un peu... Y'a une couille !)
+(Soudainement, je me sens faible.)
+/i
+#GOTO 004
+:096
+JOUE ENCORE ET ESSAIE DE FAIRE MIEUX
+MAUVAISE FIN
+/i
+#RETURN
+:097
+JOUE ENCORE ET DECOUVRE LES NOMBREUSES FINS DIFFERENTES
+BONNE FIN
+/i
+#RETURN
+#END
+#END

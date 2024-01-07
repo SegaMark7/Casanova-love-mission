@@ -1,0 +1,84 @@
+#CLEAR FL1
+#CLEAR FL2
+#CLEAR FL3
+#CLEAR FL4
+#SET FL4
+#SET FL1013
+#CLEARBKG
+#LOADBKG title@@
+:menu
+Выбери одно из 5 пунктов меню
+!newGame;1.Начать игру
+!music;2.Выбор музыки
+!sound;3.Звук
+!instruction;4.Инструкция
+!information;5.Информация
+/i
+
+:music
+Выбери один из 4 треков
+!zCasanov;1.zCasanov
+!zGirl;2.zGirl
+!zJack;3.zJack
+!zTadzhik;4.zTadzhik
+/i
+:zCasanov
+#SET FL1
+#GOTO menu
+:zGirl
+#SET FL2
+#GOTO menu
+:zJack
+#SET FL3
+#GOTO menu
+:zTadzhik
+#SET FL4
+#GOTO menu
+
+:sound
+Внимание если вы выберете "Включить музыку", то вы не сможете ее отключить до перезагрузки игры. По умолчанию музыка включена
+!soundON;Включить музыку
+!soundOFF;Выключить музыку
+/i
+:soundON
+#SET FL1013
+#GOTO menu
+:soundOFF
+#CLEAR FL1013
+#STOPMUSIC
+#GOTO menu
+
+:instruction
+Цель игры очень простая: секс! Игра состоит из двух частей: интерактивного комикса и аркадной части. Каждый выбор подтверждаем, нажатием кнопок A,B или C. Мигающая стрелка означает возможность выбора (клавиши ВВЕРХ/ВНИЗ). Удачи!
+/i
+#GOTO menu
+
+:information
+Casanova sex toys v.5.7.9.19.20
+Ported by SegaMark
+Donate: www.donationalerts.com/r/segamark6
+All Rights Reserved (c)
+DirtyConverter v.5.0.8590.34411
+/i
+#GOTO menu
+
+:newGame
+#IF NOT FL1013 #RETURN
+#IF FL1 #GOTO LzCasanov
+#IF FL2 #GOTO LzGirl
+#IF FL3 #GOTO LzJack
+#IF FL4 #GOTO LzTadzhik
+
+:LzCasanov
+#LOOPMUSIC zCasanov
+#RETURN
+:LzGirl
+#LOOPMUSIC zGirl
+#RETURN
+:LzJack
+#LOOPMUSIC zJack
+#RETURN
+:LzTadzhik
+#LOOPMUSIC zTadzhik
+#RETURN
+#END

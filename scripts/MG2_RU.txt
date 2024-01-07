@@ -1,0 +1,94 @@
+#CLEAR FL30
+#CLEAR FL28
+#CLEAR FL30
+:part1
+#CLEARBKG
+#LOADBKG E@part1
+Выбирай как будешь её массировать
+!part2;Медленно
+!part4;Нормально
+!part4;Быстро
+/i
+
+:part2
+#CLEARBKG
+#LOADBKG E@part2
+Выбирай как будешь её массировать
+!part4;Медленно
+!part4;Нормально
+!part4;Быстро
+/i
+
+:part3
+#CLEARBKG
+#LOADBKG E@part3
+Выбирай как будешь её массировать
+!part5;Медленно
+!part5;Нормально
+!part5;Быстро
+/i
+
+:part4
+#CLEARBKG
+#LOADBKG E@part4
+Выбирай как будешь её массировать
+!part6;Медленно
+!part5;Нормально
+!part5;Быстро
+/i
+
+:part5
+#CLEARBKG
+#LOADBKG E@part5
+Выбирай как будешь её массировать
+!part6;Медленно
+!part8;Нормально
+!part8;Быстро
+/i
+
+:part6
+#CLEARBKG
+#LOADBKG E@part6
+Выбирай как будешь её массировать
+!SLOW;Медленно
+!NORMAL;Нормально
+!FAST;Быстро
+/i
+
+:part7
+#CLEARBKG
+#LOADBKG E@part7
+Выбирай как будешь её массировать
+!SLOW;Медленно
+!NORMAL;Нормально
+!part8;Быстро
+/i
+
+:part8
+#CLEARBKG
+#LOADBKG E@part8
+Выбирай как будешь её массировать
+!SLOW;Медленно
+!NORMAL;Нормально
+!FAST;Быстро
+/i
+
+:SLOW
+#SET FL30
+-Тебе понравилось?
+-Нет, ты был слишком медлителен. Я найду массажиста поопытнее.
+/i
+#RETURN
+:NORMAL
+#SET FL28
+-Тебе понравилось?
+-Да, делайте так дальше. Только не переборщите.
+/i
+#RETURN
+:FAST
+#SET FL30
+-Тебе понравилось?
+-Слишком быстро. Я найду массажиста поопытнее.
+/i
+#RETURN
+#END

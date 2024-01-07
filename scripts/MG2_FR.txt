@@ -1,0 +1,94 @@
+#CLEAR FL30
+#CLEAR FL28
+#CLEAR FL30
+:part1
+#CLEARBKG
+#LOADBKG E@part1
+Choisissez comment vous allez le masser
+!part4;Lentement
+!part3;Normalement
+!part3;Rapidement
+/i
+
+:part2
+#CLEARBKG
+#LOADBKG E@part2
+Choisissez comment vous allez le masser
+!part4;Lentement
+!part3;Normalement
+!part5;Rapidement
+/i
+
+:part3
+#CLEARBKG
+#LOADBKG E@part3
+Choisissez comment vous allez le masser
+!part6;Lentement
+!part5;Normalement
+!part5;Rapidement
+/i
+
+:part4
+#CLEARBKG
+#LOADBKG E@part4
+Choisissez comment vous allez le masser
+!part7;Lentement
+!part5;Normalement
+!part5;Rapidement
+/i
+
+:part5
+#CLEARBKG
+#LOADBKG E@part5
+Choisissez comment vous allez le masser
+!part7;Lentement
+!part6;Normalement
+!part8;Rapidement
+/i
+
+:part6
+#CLEARBKG
+#LOADBKG E@part6
+Choisissez comment vous allez le masser
+!part8;Lentement
+!part8;Normalement
+!part7;Rapidement
+/i
+
+:part7
+#CLEARBKG
+#LOADBKG E@part7
+Choisissez comment vous allez le masser
+!SLOW;Lentement
+!part8;Normalement
+!part8;Rapidement
+/i
+
+:part8
+#CLEARBKG
+#LOADBKG E@part8
+Choisissez comment vous allez le masser
+!SLOW;Lentement
+!NORMAL;Normalement
+!FAST;Rapidement
+/i
+
+:SLOW
+#SET FL30
+-T'as aime ?
+-Non, tu etais trop lent. Je vais devoir me trouver un autre masseur.
+/i
+#RETURN
+:NORMAL
+#SET FL28
+-T'as aime ?
+-Continue. Sois un peu plus doux.
+/i
+#RETURN
+:FAST
+#SET FL30
+-T'as aime ?
+-Presque, mais tu etais un peu trop lent. Je vais devoir trouver un autre masseur.
+/i
+#RETURN
+#END

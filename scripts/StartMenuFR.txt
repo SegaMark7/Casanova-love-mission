@@ -1,0 +1,84 @@
+#CLEAR FL1
+#CLEAR FL2
+#CLEAR FL3
+#CLEAR FL4
+#SET FL4
+#SET FL1013
+#CLEARBKG
+#LOADBKG title@@
+:menu
+Choisissez parmi 5 elements de menu
+!newGame;1.Commencer le jeu
+!music;2.Selection musicale
+!sound;3.Audio
+!instruction;4.Instruction
+!information;5.Information
+/i
+
+:music
+Choisissez l'une des 4 pistes
+!zCasanov;1.zCasanov
+!zGirl;2.zGirl
+!zJack;3.zJack
+!zTadzhik;4.zTadzhik
+/i
+:zCasanov
+#SET FL1
+#GOTO menu
+:zGirl
+#SET FL2
+#GOTO menu
+:zJack
+#SET FL3
+#GOTO menu
+:zTadzhik
+#SET FL4
+#GOTO menu
+
+:sound
+Attention, si vous selectionnez "Activer la musique", vous ne pourrez pas l'eteindre tant que le jeu n'aura pas redemarre. La musique est activee par defaut
+!soundON;Allumer la musique
+!soundOFF;Eteignez la musique
+/i
+:soundON
+#SET FL1013
+#GOTO menu
+:soundOFF
+#CLEAR FL1013
+#STOPMUSIC
+#GOTO menu
+
+:instruction
+Le but du jeu est tres simple : Coucher ! Ce jeu est compose de deux modes : une bande dessinee interactive et un mode arcade. Chaque choix doit etre confirme en appuyant sur A,B ou C. Les fleches et les messages clignotants t’indiquent que tu as la possibilite de choisir (droit/gauche). Bonne chasse !
+/i
+#GOTO menu
+
+:information
+Casanova sex toys v.5.7.9.19.20
+Ported by SegaMark
+Donate: www.donationalerts.com/r/segamark6
+All Rights Reserved (c)
+DirtyConverter v.5.0.8590.34411
+/i
+#GOTO menu
+
+:newGame
+#IF NOT FL1013 #RETURN
+#IF FL1 #GOTO LzCasanov
+#IF FL2 #GOTO LzGirl
+#IF FL3 #GOTO LzJack
+#IF FL4 #GOTO LzTadzhik
+
+:LzCasanov
+#LOOPMUSIC zCasanov
+#RETURN
+:LzGirl
+#LOOPMUSIC zGirl
+#RETURN
+:LzJack
+#LOOPMUSIC zJack
+#RETURN
+:LzTadzhik
+#LOOPMUSIC zTadzhik
+#RETURN
+#END

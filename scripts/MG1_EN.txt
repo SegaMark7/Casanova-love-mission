@@ -1,0 +1,94 @@
+#CLEAR FL27
+#CLEAR FL30
+#CLEAR FL30
+:part1
+#CLEARBKG
+#LOADBKG E@part1
+Choose how you will massage her
+!part2;Gradually
+!part2;Normally
+!part4;Quickly
+/i
+
+:part2
+#CLEARBKG
+#LOADBKG E@part2
+Choose how you will massage her
+!part3;Gradually
+!part3;Normally
+!part3;Quickly
+/i
+
+:part3
+#CLEARBKG
+#LOADBKG E@part3
+Choose how you will massage her
+!part6;Gradually
+!part4;Normally
+!part5;Quickly
+/i
+
+:part4
+#CLEARBKG
+#LOADBKG E@part4
+Choose how you will massage her
+!part6;Gradually
+!part5;Normally
+!part7;Quickly
+/i
+
+:part5
+#CLEARBKG
+#LOADBKG E@part5
+Choose how you will massage her
+!part8;Gradually
+!part6;Normally
+!part8;Quickly
+/i
+
+:part6
+#CLEARBKG
+#LOADBKG E@part6
+Choose how you will massage her
+!part7;Gradually
+!part8;Normally
+!part7;Quickly
+/i
+
+:part7
+#CLEARBKG
+#LOADBKG E@part7
+Choose how you will massage her
+!part8;Gradually
+!NORMAL;Normally
+!FAST;Quickly
+/i
+
+:part8
+#CLEARBKG
+#LOADBKG E@part8
+Choose how you will massage her
+!SLOW;Gradually
+!NORMAL;Normally
+!FAST;Quickly
+/i
+
+:SLOW
+#SET FL27
+-How was it?
+-Very good. Now be as fast as you can!
+/i
+#RETURN
+:NORMAL
+#SET FL30
+-How was it?
+-You were way too fast! I'll have to find a different masseur.
+/i
+#RETURN
+:FAST
+#SET FL30
+-How was it?
+-A little too fast. I'll have to find a different masseur.
+/i
+#RETURN
+#END

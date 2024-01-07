@@ -1,0 +1,504 @@
+:000
+#CLEARBKG
+#LOADBKG A@
+(?Hola! ?Soy yo, Casanova!)
+(Como sabes, me encanta perseguir chicas.)
+:001
+(Aunque hoy es mi dia libre.)
+(Creo que me voy a quedar en casa a ver la tele.)
+/i
+#GOTO 006
+:002
+#CLEARBKG
+#LOADBKG A@
+(?Pero que...? ?Estoy de vuelta en mi apartamento!)
+(?Mi aventura fue solo un sueno?)
+:003
+(?Si no lo fue, eso significa que Maligno dominara pronto el mundo!)
+(?Debo haber cometido una gran equivocacion en algun momento!)
+/i
+#GOTO 096
+:004
+#CLEARBKG
+#LOADBKG A@
+(?Pero que...? ?Estoy de vuelta en mi apartamento!)
+(?Mi aventura fue solo un sueno?)
+:005
+(?Si no lo fue, eso significa que acabo de salvar el mundo de Maligno!)
+(?Soy un heroe! ?Ninguna chica puede resistirse a mi!)
+/i
+#GOTO 097
+/i
+:006
+#CLEARBKG
+#LOADBKG B@
+(Una enigmatica rubia aparece en la pantalla.)
+-?Casanova, tengo una mision para ti!
+:007
+-?Que ocurre, senorita? ?Quien eres?
+-Eso no importa... ?Has oido hablar de Maximo Maligno?
+:008
+-?El famoso supercriminal? Claro que se quien es.
+-Ha robado un dispositivo muy peligroso que puede utilizar para dominar el mundo. ?Tienes que detenerle!
+:009
+-?Pero por que yo? Solo soy un chico normal.
+-Tu experiencia con las mujeres sera muy util en esta mision. ?Tu pais te necesita!
+:010
+-?Pero donde puedo encontrar a Maligno?
+-Fue visto por ultima vez en el club Ultramundo.
+:011
+-Hay rumores que dicen que Maligno trabaja con Urraca, una ladrona de joyas. ?La interrogo antes a ella?
+-Conozco una sala de masajes a la que suele ir Urraca. ?Cual es tu plan?
+'Выбор 12
+:012
+!choice19;VOY A LA SALA DE MASAJES
+!choice13;VOY AL CLUB ULTRAMUNDO
+/i
+:choice19
+?Buena suerte, Casanova!
+/i
+#GOTO 019
+:choice13
+?Buena suerte, Casanova!
+/i
+#GOTO 013
+/i
+:013
+#CLEARBKG
+#LOADBKG C@
+MAS TARDE
+(Me gusta esa chica tras la barra... ?Que hago?)
+'Выбор 14
+:014
+!choice15;FLIRTEA CON ELLA
+!choice17;HAZLE PREGUNTAS
+/i
+:choice15
+(Invito a la chica a una cita.)
+/i
+#GOTO 015
+:choice17
+(A ver que piense... ?Sobre que puedo preguntarle?)
+/i
+#GOTO 017
+:015
+(Dice que hoy trabaja hasta tarde.)
+(Le pregunto si puede darme al menos su numero de telefono.)
+:016
+(La chica sonrie y accede.)
+(Prometo llamarla pronto.)
+/i
+#GOTO 018
+'Выбор 17
+:017
+Tomar una decision
+!choice18_0;MALIGNO, EL MALVADO CEREBRO CRIMINAL
+!choice18_1;URRACA, LA SEDUCTORA LADRONA
+/i
+:choice18_0
+(La chica dice que no ha visto a Maligno desde hace tiempo.)
+/i
+#GOTO 018
+:choice18_1
+(La chica dice que nunca ha visto a Urraca en el club.)
+/i
+#GOTO 018
+:018
+(Supongo que no tengo mas que hacer aqui. ?Hora de marcharse!)
+(Acabo mi bebida y me voy.)
+/i
+#GOTO 037
+/i
+:019
+#CLEARBKG
+#LOADBKG D@
+MAS TARDE
+(La chica me pregunta si estoy aqui por el trabajo.)
+'Выбор 20
+:020
+!choice21;RESPONDO QUE SI
+!choice23;RESPONDO QUE NO
+/i
+:choice21
+(Se cree que soy un nuevo empleado.)
+/i
+#GOTO 021
+:choice23
+(Le explico que solo quiero hacerle unas preguntas sobre...)
+/i
+#GOTO 023
+:021
+(?Genial! ?Me encanta dar masajes a bellas mujeres!)
+(Mi primer cliente sera la mismisima Urraca.)
+:022
+(Ojala tuviera siempre tanta suerte...)
+(Espero que Urraca no se de cuenta de que estoy en una mision secreta.)
+/i
+#GOTO 025
+'Выбор 23
+:023
+Tomar una decision
+!choice24_0;MALIGNO, EL MALVADO CEREBRO CRIMINAL
+!choice24_1;URRACA, LA SEDUCTORA LADRONA
+/i
+:choice24_0
+(La chica dice que no sabe de quien estoy hablando.)
+/i
+#GOTO 024
+:choice24_1
+(La chica dice que estara en problemas si me dice algo.)
+/i
+#GOTO 024
+:024
+(Parece que no voy a conseguir informacion aqui.)
+(?Hora de marcharse! Salgo de la sala.)
+/i
+#GOTO 037
+/i
+:025
+#CLEARBKG
+#LOADBKG E@
+-?Buenos dias! ?Desea algo en especial?
+-Por favor, empieza con lentitud. Quiero relajarme.
+/i
+:026
+#PROGCALL MG1_ES
+#IF FL27 #GOTO 027
+#IF FL30 #GOTO 030
+#IF FL30 #GOTO 030
+/i
+:027
+#PROGCALL MG2_ES
+#IF FL30 #GOTO 030
+#IF FL28 #GOTO 028
+#IF FL30 #GOTO 030
+/i
+:028
+#PROGCALL MG3_ES
+#IF FL30 #GOTO 030
+#IF FL30 #GOTO 030
+#IF FL29 #GOTO 029
+:029
+(Urraca me da las gracias y se marcha, satisfecha con el servicio.)
+(Decido seguirla.)
+/i
+#GOTO 034
+:030
+#CLEARBKG
+#LOADBKG E@
+(Urraca se levanta y se va, insatisfecha con el servicio.)
+(Decido seguirla.)
+/i
+:031
+#CLEARBKG
+#LOADBKG F@
+(Por desgracia, unos tipos me tienden una emboscada en un callejon.)
+-?Casanova, supongo? ?Has caido en mi trampa!
+:032
+-Espera un minuto... ?Tu eres Maximo Maligno!
+-?Si! ?Y no volveras a entrometerte en mis planes!
+:033
+-?Por que estas tan seguro?
+-?Porque ahora eres mi prisionero!
+/i
+#GOTO 040
+:034
+#CLEARBKG
+#LOADBKG F@
+(Por desgracia, unos tipos me tienden una emboscada en un callejon.)
+-?Casanova, supongo? ?Has caido en mi trampa!
+:035
+-Espera un minuto... ?Tu eres Maximo Maligno!
+-?Si! ?Y no volveras a entrometerte en mis planes!
+:036
+-?Por que estas tan seguro?
+-?Porque ahora eres mi prisionero!
+/i
+#GOTO 043
+:037
+#CLEARBKG
+#LOADBKG F@
+(Por desgracia, unos tipos me tienden una emboscada en un callejon.)
+-?Casanova, supongo? ?Has caido en mi trampa!
+:038
+-Espera un minuto... ?Tu eres Maximo Maligno!
+-?Si! ?Y no volveras a entrometerte en mis planes!
+:039
+-?Por que estas tan seguro?
+-?Porque ahora eres mi prisionero!
+/i
+#GOTO 046
+/i
+:040
+#CLEARBKG
+#LOADBKG G@
+(Maligno me ata y me lleva a su escondite secreto.)
+-?En cuanto borre tu memoria, la victoria sera mia!
+:041
+-?No, por favor! ?Urraca, no dejes que lo haga!
+-?Por que deberia ayudarte? ?No fuiste capaz de darme un buen masaje!
+:042
+(?He fallado mi mision! ?Se acabo!)
+-?Ja! ?Buenas noches, Casanova!
+/i
+#GOTO 002
+:043
+#CLEARBKG
+#LOADBKG G@
+(Maligno me ata y me lleva a su escondite secreto.)
+-?En cuanto borre tu memoria, la victoria sera mia!
+:044
+-?No, por favor! ?Urraca, no dejes que lo haga!
+-Tienes talento como masajista... Supongo que podria usarte de alguna forma.
+:045
+(Urraca le pregunta a Maligno si puede llevarme a su cuarto.)
+-No puedo decirte que no, Urraca. Haz lo que quieras.
+/i
+#GOTO 048
+:046
+#CLEARBKG
+#LOADBKG G@
+(Maligno me ata y me lleva a su escondite secreto.)
+-?En cuanto borre tu memoria, la victoria sera mia!
+:047
+(?He fallado mi mision! ?Se acabo!)
+-?Ja! ?Buenas noches, Casanova!
+/i
+#GOTO 002
+/i
+:048
+#CLEARBKG
+#LOADBKG H@
+EN EL CUARTO PRIVADO DE URRACA
+-?Que crees que deberiamos hacer, guapo?
+'Выбор 49
+:049
+!choice54;BESARNOS
+!choice50;HABLAR
+/i
+:choice54
+Que gracioso. He tenido la misma idea...
+/i
+#GOTO 054
+:choice50
+?Estas seguro? ?Estas aqui solo conmigo y quieres hablar?
+/i
+#GOTO 050
+:050
+-Es que me pregunto... ?Como piensa Maligno dominar el mundo?
+-Ha conseguido la pistola amorosa y va a usarla para controlar las mentes de todas las mujeres politicas.
+:051
+-?La pistola amorosa? ?Como funciona?
+-Como las flechas de Cupido. Un disparo es suficiente para que el objetivo te ame para siempre.
+:052
+-Parece algo valioso.
+-Por supuesto. Estoy segura de que podria conseguir un par de millones por ella.
+:053
+-?Entonces por que no se la robas a Maligno y la vendes? Yo puedo ayudarte.
+-Me gusta tu forma de pensar... ?Vale, hagamoslo!
+/i
+#GOTO 060
+/i
+:054
+#CLEARBKG
+#LOADBKG I@
+(Que puedo decir... Siempre me han gustado las chicas malas.)
+(?Y esta es la mas atractiva que he conocido!)
+:055
+-Oh, Urraca... Eres tan bella.
+-Los halagos no te llevaran a ningun sitio, Casanova.
+:056
+(Mmm, asi que le gusta jugar duro...)
+(A ver si puedo usar mis encantos para salir de esta.)
+:057
+-?Por que no me desatas? Nos divertiremos mas de esa forma.
+-?Desatarte? ?Nunca! Voy a llevarte otra vez con Maligno.
+:058
+-?Por que? ?Ya no te gusto?
+-Puede que si, pero Maligno me gusta mas.
+:059
+-?Como puedes ser tan fria?
+-Me temo que es la unica forma de ser millonaria. Ahora vamos a ver a Maligno.
+/i
+#GOTO 042
+/i
+:060
+#CLEARBKG
+#LOADBKG J@
+(Juntos nos las arreglamos para reducir al villano.)
+-?Entrega la pistola amorosa, Maligno!
+:061
+-?Sera mejor que hagas lo que dice!
+-?Me rindo! ?No me hagais dano!
+:062
+-?Que hacemos con el, Urraca?
+-No estoy segura... ?Tu decides!
+'Выбор 63
+:063
+!choice64;DEJO QUE SE VAYA
+!choice65;LLAMO A LA POLICIA
+/i
+:choice64
+?Vas a perdonarme? ?Pero por que?
+/i
+#GOTO 064
+:choice65
+?No! ?No quiero ir a la carcel!
+/i
+#GOTO 065
+:064
+-Que esto te sirva de leccion. ?Ahora vete antes de que cambie de idea!
+-?Rapido, Casanova! ?Tenemos que huir!
+/i
+#GOTO 066
+:065
+#CLEARBKG
+#LOADBKG J@
+#SET FL99
+-?Deberias haber pensado en ello antes de escoger una vida criminal!
+-?Rapido, Casanova! ?Tenemos que huir!
+/i
+:066
+#CLEARBKG
+#LOADBKG K@
+(Entramos en el coche y escapamos del escondite.)
+-?Jajaja! ?Hacemos un gran equipo!
+:067
+-?Eres la mejor, Urraca!
+(Ahora tengo que decidir que hago ahora...)
+:068
+(Podria ayudar a Urraca a vender la pistola amorosa y compartir los beneficios con ella.)
+(De esa forma, podria conseguir dinero suficiente para el resto de mi vida.)
+:069
+(Pero esa no es la unica opcion...)
+(La pistola amorosa esta a mi alcance. Podria usarla con Urraca.)
+:070
+(Eso la volveria inofensiva y podria escaparme con la pistola amorosa en mi poder.)
+(?Que deberia hacer? ?Vender la pistola amorosa con Urraca o quedarmela?)
+'Выбор 71
+:071
+!choice78;ME LA QUEDO
+!choice72;LA VENDO
+/i
+:choice78
+(No tengo eleccion... Traiciono a Urraca.)
+/i
+#GOTO 078
+:choice72
+(No hay otra eleccion... Ayudare a Urraca a vender la pistola amorosa.)
+/i
+#GOTO 072
+/i
+:072
+#CLEARBKG
+#IF FL99 #LOADBKG P@
+#IF NOT FL99 #LOADBKG L@
+#CLEAR FL99
+UN ANO MAS TARDE
+(Y aqui estoy. Obscenamente rico y feliz.)
+:073
+(Urraca es mi novia ahora.)
+(Vivimos juntos en una casa junto a la playa.)
+:074
+(?La vida es genial con ella!)
+-?Hola carino! ?Que tal estas?
+:075
+-Genial, como siempre que estas cerca.
+-Espera... ?Por que me miras asi?
+:076
+-Tengo pensamientos sucios cuando te miro.
+-?Jajaja! Habra que hacer algo al respecto, ?no?
+:077
+-Besame, carinito.
+(De pronto, empiezo a marearme.)
+/i
+#GOTO 004
+/i
+:078
+#CLEARBKG
+#LOADBKG M@
+-Lo siento, pero necesito este juguete.
+-?Acabas de cometer una terrible equivocacion!
+:079
+-?Que quieres decir?
+-No seras capaz de vender la pistola amorosa sin mi ayuda. ?Que vas a hacer con ella?
+:080
+(Esa es una buena pregunta. Dejame pensar...)
+(Probablemente deberia darle la pistola amorosa a la rubia que me envio a esta mision.)
+:081
+(Sin embargo, tambien puedo usarla para hacer que todas las chicas del mundo se enamoren de mi.)
+(Despues de todo, es lo que siempre he querido.)
+:082
+(Es una dificil decision. ?No se que hacer!)
+(?Deberia darle la pistola amorosa a la rubia o usarla para conseguir chicas?)
+'Выбор 83
+:083
+!choice84;LA USO PARA CONSEGUIR CHICAS
+!choice90;SE LA DOY A LA RUBIA
+/i
+:choice84
+(Si, por supuesto... ?Eso es lo que hare!)
+/i
+#GOTO 084
+:choice90
+(Me pongo en contacto con ella y la chica me dice que nos veamos en un lugar secreto. Voy alli.)
+/i
+#GOTO 090
+/i
+:084
+#CLEARBKG
+#LOADBKG N@
+UN ANO MAS TARDE
+(Y aqui estoy. El hombre mas deseado del mundo.)
+:085
+(?Ahora que tengo la pistola amorosa, no hay chica que se me resista!)
+(Despues de todo este tiempo, por fin me he convertido en un autentico Casanova.)
+:086
+(?Las cosas nunca han estado mejor!)
+(Todas las mujeres quieren una cita conmigo.)
+:087
+(Rubias, morenas, pelirrojas... ?Solo tengo que escoger lo que quiera!)
+(?Echa un vistazo a estas bellezas! ?No son maravillosas?)
+:088
+-Bueno, senoritas... ?Vamos a pasarlo bien!
+(Esta va a ser una velada muy agradable.)
+:089
+(Pero espera un momento... ?Algo va mal!)
+(De pronto, empiezo a marearme.)
+/i
+#GOTO 004
+/i
+:090
+#CLEARBKG
+#LOADBKG O@
+(La rubia no pierde ni un minuto.)
+-Oh, Casanova... ?Deja que te ensene lo orgullosa que estoy de ti!
+:091
+-Muy, muy, muy orgullosa, segun veo.
+-?Jajaja! ?Esto solo es el calentamiento, chico!
+:092
+-?Me gusta lo que oigo!
+-Oh, Casanova...
+:093
+-Podria acostumbrarme a ser un agente secreto.
+-Puede que tenga otra mision para ti muy pronto.
+:094
+-Podemos hablar de eso mas tarde. ?Ahora vamos a divertirnos!
+(Esta va a ser una velada muy agradable.)
+:095
+(Pero espera un momento... ?Algo va mal!)
+(De pronto, empiezo a marearme.)
+/i
+#GOTO 004
+:096
+?JUEGA DE NUEVO E INTENTA ALCANZAR UN FINAL MEJOR!
+MAL FINAL
+/i
+#RETURN
+:097
+?JUEGA OTRA VEZ E INTENTA ALCANZAR UNO DE LOS MUCHOS FINALES DIFERENTES!
+BUEN FINAL
+/i
+#RETURN
+#END
+#END

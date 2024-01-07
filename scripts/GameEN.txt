@@ -1,0 +1,504 @@
+:000
+#CLEARBKG
+#LOADBKG A@
+(Hi! It's me, Casanova!)
+(As you know, I love chasing girls.)
+:001
+(Today is my day off, though.)
+(I think I'll just stay home and watch some TV.)
+/i
+#GOTO 006
+:002
+#CLEARBKG
+#LOADBKG A@
+(What the...? I'm back at my apartment!)
+(Was my adventure only a dream?)
+:003
+(If not, that means Vaximus will soon take over the world!)
+(I must have made a terrible mistake at some point!)
+/i
+#GOTO 096
+:004
+#CLEARBKG
+#LOADBKG A@
+(What the...? I'm back at my apartment!)
+(Was my adventure only a dream?)
+:005
+(If not, that means I just saved the world from Vaximus!)
+(I'm a hero! No girl will resist me now!)
+/i
+#GOTO 097
+/i
+:006
+#CLEARBKG
+#LOADBKG B@
+(A mysterious blonde appears on the screen.)
+-Casanova, I have a mission for you!
+:007
+-What's going on, lady? Who are you?
+-That's not important right now... Have you heard of Emil Vaximus?
+:008
+-The infamous super-criminal? Of course I heard of him.
+-He stole a very dangerous device which he can use to rule the world. You have to stop him!
+:009
+-But why me? I'm just a regular guy.
+-Your experience with women will come in handy on this mission. Your country needs you!
+:010
+-But where will I find Vaximus?
+-He was last seen in the Underworld club.
+:011
+-There are rumors that Vaximus works with Raven, a jewel thief. Should I interrogate her first?
+-I know of a massage parlor Raven often visits. What is your plan?
+'Выбор 12
+:012
+!choice19;GO TO THE MASSAGE PARLOR
+!choice13;GO TO THE UNDERWORLD CLUB
+/i
+:choice19
+Good luck, Casanova!
+/i
+#GOTO 019
+:choice13
+Good luck, Casanova!
+/i
+#GOTO 013
+/i
+:013
+#CLEARBKG
+#LOADBKG C@
+LATER
+(I like that girl behind the bar... What should I do?)
+'Выбор 14
+:014
+!choice15;FLIRT WITH HER
+!choice17;ASK HER QUESTIONS
+/i
+:choice15
+(I invite the girl to a date.)
+/i
+#GOTO 015
+:choice17
+(Let me think... Who should I ask about?)
+/i
+#GOTO 017
+:015
+(She says she's working late today.)
+(I ask if she can at least give me her phone number.)
+:016
+(The girl smiles and agrees.)
+(I promise to call her sometime soon.)
+/i
+#GOTO 018
+'Выбор 17
+:017
+Make a choice
+!choice18_0;VAXIMUS, THE EVIL MASTERMIND
+!choice18_1;RAVEN, THE SEDUCTIVE THIEF
+/i
+:choice18_0
+(The girl says that she hadn't seen Vaximus in a long time.)
+/i
+#GOTO 018
+:choice18_1
+(The girl says that she had never seen Raven in the club.)
+/i
+#GOTO 018
+:018
+(I guess I'm done here. Time to go!)
+(I finish up my drink and leave.)
+/i
+#GOTO 037
+/i
+:019
+#CLEARBKG
+#LOADBKG D@
+LATER
+(The girl asks if I'm here for the job.)
+'Выбор 20
+:020
+!choice21;I SAY YES
+!choice23;I SAY NO
+/i
+:choice21
+(She thinks I'm a new employee.)
+/i
+#GOTO 021
+:choice23
+(I explain to her that I only want to ask some questions about...)
+/i
+#GOTO 023
+:021
+(That's great! I love massaging beautiful women!)
+(My first client will be Raven herself.)
+:022
+(If only I could always be so lucky...)
+(Anyway, I hope Raven won't realize I'm on a secret mission.)
+/i
+#GOTO 025
+'Выбор 23
+:023
+Make a choice
+!choice24_0;VAXIMUS, THE EVIL MASTERMIND
+!choice24_1;RAVEN, THE SEDUCTIVE THIEF
+/i
+:choice24_0
+(The girl says that she doesn't know who I'm talking about.)
+/i
+#GOTO 024
+:choice24_1
+(The girl says that she'll be in trouble if she tells me anything.)
+/i
+#GOTO 024
+:024
+(Looks like I won't get any information here.)
+(Time to go, then! I leave the parlor.)
+/i
+#GOTO 037
+/i
+:025
+#CLEARBKG
+#LOADBKG E@
+-Good day to you! Any special wishes?
+-Please start off slow. I want to relax.
+/i
+:026
+#PROGCALL MG1_EN
+#IF FL27 #GOTO 027
+#IF FL30 #GOTO 030
+#IF FL30 #GOTO 030
+/i
+:027
+#PROGCALL MG2_EN
+#IF FL30 #GOTO 030
+#IF FL28 #GOTO 028
+#IF FL30 #GOTO 030
+/i
+:028
+#PROGCALL MG3_EN
+#IF FL30 #GOTO 030
+#IF FL30 #GOTO 030
+#IF FL29 #GOTO 029
+:029
+(Raven thanks me and leaves, satisfied with the service.)
+(I decide to follow her.)
+/i
+#GOTO 034
+:030
+#CLEARBKG
+#LOADBKG E@
+(Raven gets up and leaves, not satisfied with the service.)
+(I decide to follow her.)
+/i
+:031
+#CLEARBKG
+#LOADBKG F@
+(Unfortunately, some guys ambush me in an alley.)
+-Casanova, I presume? You have fallen into my trap!
+:032
+-Wait a minute... You're Emil Vaximus!
+-Yes! You won't meddle into my plans anymore!
+:033
+-Why are you so sure?
+-Because from now on, you're my prisoner!
+/i
+#GOTO 040
+:034
+#CLEARBKG
+#LOADBKG F@
+(Unfortunately, some guys ambush me in an alley.)
+-Casanova, I presume? You have fallen into my trap!
+:035
+-Wait a minute... You're Emil Vaximus!
+-Yes! You won't meddle into my plans anymore!
+:036
+-Why are you so sure?
+-Because from now on, you're my prisoner!
+/i
+#GOTO 043
+:037
+#CLEARBKG
+#LOADBKG F@
+(Unfortunately, some guys ambush me in an alley.)
+-Casanova, I presume? You have fallen into my trap!
+:038
+-Wait a minute... You're Emil Vaximus!
+-Yes! You won't meddle into my plans anymore!
+:039
+-Why are you so sure?
+-Because from now on, you're my prisoner!
+/i
+#GOTO 046
+/i
+:040
+#CLEARBKG
+#LOADBKG G@
+(Vaximus ties me up and brings me to his secret hideout.)
+-As soon as I erase your memory, victory will be mine!
+:041
+-No, please! Raven, don't let him do it!
+-Why would I help you? You couldn't even massage me properly!
+:042
+(I've failed my mission! It's over!)
+-Hah! Goodnight, Casanova!
+/i
+#GOTO 002
+:043
+#CLEARBKG
+#LOADBKG G@
+(Vaximus ties me up and brings me to his secret hideout.)
+-As soon as I erase your memory, victory will be mine!
+:044
+-No, please! Raven, don't let him do it!
+-You're a skilled masseur... I suppose I could find some use for you.
+:045
+(Raven asks Vaximus if she can take me to her room.)
+-I can't say no to you, Raven. Do as you please.
+/i
+#GOTO 048
+:046
+#CLEARBKG
+#LOADBKG G@
+(Vaximus ties me up and brings me to his secret hideout.)
+-As soon as I erase your memory, victory will be mine!
+:047
+(I've failed my mission! It's over!)
+-Hah! Goodnight, Casanova!
+/i
+#GOTO 002
+/i
+:048
+#CLEARBKG
+#LOADBKG H@
+IN RAVEN'S PRIVATE CHAMBER
+-What do you think we should do, cutie?
+'Выбор 49
+:049
+!choice54;KISS
+!choice50;TALK
+/i
+:choice54
+Funny. I've had the exact same idea...
+/i
+#GOTO 054
+:choice50
+Are you serious? You're here with me alone and you want to talk?
+/i
+#GOTO 050
+:050
+-I just wonder... How does Vaximus plan to take over the world?
+-He has obtained the love gun and will use it to mind control all the female politicians.
+:051
+-Love gun? How does it work?
+-Like Cupid's arrows. One shot is all it takes for the target to love you forever.
+:052
+-Sounds like a valuable thing.
+-Indeed. I'm sure I could get at least a couple of millions for it.
+:053
+-Then why don't you steal it from Vaximus and sell it? I can help you.
+-I like the way you're thinking... All right, let's do this!
+/i
+#GOTO 060
+/i
+:054
+#CLEARBKG
+#LOADBKG I@
+(What can I say... I always liked naughty girls.)
+(And she's the hottest one I ever met!)
+:055
+-Oh, Raven... You're beautiful.
+-Flattery will get you nowhere, Casanova.
+:056
+(Hmm, so she likes to play rough...)
+(Let me see if I can charm my way out of this mess.)
+:057
+-Why don't you untie me? We'll have more fun that way.
+-Untie you? Never! I'm taking you back to Vaximus.
+:058
+-Why? Don't you like me anymore?
+-Maybe I do, but I like Vaximus more.
+:059
+-How can you be so heartless?
+-That's the only way to become rich, I'm afraid. Now let's go see Vaximus.
+/i
+#GOTO 042
+/i
+:060
+#CLEARBKG
+#LOADBKG J@
+(Together we manage to overpower the villain.)
+-Hand over the love gun, Vaximus!
+:061
+-You better do what she says, or else!
+-I surrender! Don't hurt me!
+:062
+-What should we do with him, Raven?
+-I'm not sure... You decide!
+'Выбор 63
+:063
+!choice64;LET HIM GO FREE
+!choice65;CALL THE POLICE
+/i
+:choice64
+You'll spare me? But why?
+/i
+#GOTO 064
+:choice65
+No! I don't want to go to jail!
+/i
+#GOTO 065
+:064
+-Let this be a lesson to you. Now go before I change my mind!
+-Quickly, Casanova! We have to run!
+/i
+#GOTO 066
+:065
+#CLEARBKG
+#LOADBKG J@
+#SET FL99
+-You should have thought of it before you chose a life of crime!
+-Quickly, Casanova! We have to run!
+/i
+:066
+#CLEARBKG
+#LOADBKG K@
+(We enter the car and escape from the hideout.)
+-Ha ha! We make a great team!
+:067
+-You're the best, Raven!
+(Now I have to decide what's next...)
+:068
+(I could help Raven sell the love gun and share the profit with her.)
+(That way, I'd probably get enough money to last a lifetime.)
+:069
+(But that's not the only option...)
+(The love gun is in my reach. I can try to use it on Raven.)
+:070
+(That would make her powerless and I could get away with the love gun in my possession.)
+(So what should I do? Sell the love gun with Raven or keep it for myself?)
+'Выбор 71
+:071
+!choice78;KEEP IT
+!choice72;SELL IT
+/i
+:choice78
+(There's no other choice... I betray Raven.)
+/i
+#GOTO 078
+:choice72
+(There's no other choice... I help Raven sell the love gun.)
+/i
+#GOTO 072
+/i
+:072
+#CLEARBKG
+#IF FL99 #LOADBKG P@
+#IF NOT FL99 #LOADBKG L@
+#CLEAR FL99
+ONE YEAR LATER
+(And here I am. Indecently rich and happy.)
+:073
+(Raven is my girlfriend now.)
+(We live together in a house near the beach.)
+:074
+(Life is great with her!)
+-Hi honey! How are you today?
+:075
+-I'm great, as always when you're near.
+-Wait... Why are you looking at me like that?
+:076
+-I have dirty thoughts whenever I see you.
+-Ha ha! We'll have to do something about it, won't we?
+:077
+-Give me a kiss, sweetie.
+(Suddenly, I start to feel dizzy.)
+/i
+#GOTO 004
+/i
+:078
+#CLEARBKG
+#LOADBKG M@
+-I'm sorry, but I need this toy.
+-You just made a terrible mistake!
+:079
+-What do you mean?
+-You won't be able to sell the love gun without my help. What are you going to do with it?
+:080
+(That's a good question. Let me think...)
+(I should probably hand the love gun over to the blonde who sent me on this mission.)
+:081
+(However, I can also use it to make every girl in the world fall in love with me.)
+(After all, that's what I always wanted.)
+:082
+(It's a tough call. I don't know what to do!)
+(Should I give the love gun to the blonde or use it to get the girls?)
+'Выбор 83
+:083
+!choice84;USE IT TO GET THE GIRLS
+!choice90;GIVE IT TO THE BLONDE
+/i
+:choice84
+(Yes, definitely... That's what I'll do!)
+/i
+#GOTO 084
+:choice90
+(I contact her and she tells me to meet her at a secret place. I go there.)
+/i
+#GOTO 090
+/i
+:084
+#CLEARBKG
+#LOADBKG N@
+ONE YEAR LATER
+(And here I am. The most desired man in the universe.)
+:085
+(Now that I have the love gun, no girl can resist me!)
+(After all this time, I finally became a true Casanova.)
+:086
+(Life has never been better!)
+(All the women want a date with me.)
+:087
+(Blondes, brunettes, redheads... I get to pick and choose!)
+(Just look at these beauties! Aren't they wonderful?)
+:088
+-Okay, ladies... Let's have some fun!
+(This is going to be a nice evening.)
+:089
+(But wait a minute... Something's wrong!)
+(Suddenly, I start to feel dizzy.)
+/i
+#GOTO 004
+/i
+:090
+#CLEARBKG
+#LOADBKG O@
+(The blonde is not wasting any time.)
+-Oh, Casanova... Let me show you how proud I am of you!
+:091
+-Very, very, very proud, from what I can see.
+-Ha ha! I'm just warming up, boy!
+:092
+-I like what I hear!
+-Oh, Casanova...
+:093
+-I could get used to being a secret agent.
+-Maybe I'll have another mission for you soon.
+:094
+-We can talk about it later. Let's have some fun now!
+(This is going to be a nice evening.)
+:095
+(But wait a minute... Something's wrong!)
+(Suddenly, I start to feel dizzy.)
+/i
+#GOTO 004
+:096
+PLAY AGAIN AND TRY TO REACH A BETTER ENDING!
+BAD ENDING
+/i
+#RETURN
+:097
+PLAY AGAIN AND REACH ONE OF MANY DIFFERENT ENDINGS!
+GOOD ENDING
+/i
+#RETURN
+#END
+#END

@@ -1,0 +1,94 @@
+#CLEAR FL30
+#CLEAR FL30
+#CLEAR FL29
+:part1
+#CLEARBKG
+#LOADBKG E@part1
+Scegli come massaggiarlo
+!part4;Lento
+!part3;Normale
+!part3;Veloce
+/i
+
+:part2
+#CLEARBKG
+#LOADBKG E@part2
+Scegli come massaggiarlo
+!part4;Lento
+!part4;Normale
+!part5;Veloce
+/i
+
+:part3
+#CLEARBKG
+#LOADBKG E@part3
+Scegli come massaggiarlo
+!part6;Lento
+!part4;Normale
+!part4;Veloce
+/i
+
+:part4
+#CLEARBKG
+#LOADBKG E@part4
+Scegli come massaggiarlo
+!part6;Lento
+!part6;Normale
+!part5;Veloce
+/i
+
+:part5
+#CLEARBKG
+#LOADBKG E@part5
+Scegli come massaggiarlo
+!part7;Lento
+!part6;Normale
+!part6;Veloce
+/i
+
+:part6
+#CLEARBKG
+#LOADBKG E@part6
+Scegli come massaggiarlo
+!part7;Lento
+!NORMAL;Normale
+!part7;Veloce
+/i
+
+:part7
+#CLEARBKG
+#LOADBKG E@part7
+Scegli come massaggiarlo
+!SLOW;Lento
+!NORMAL;Normale
+!FAST;Veloce
+/i
+
+:part8
+#CLEARBKG
+#LOADBKG E@part8
+Scegli come massaggiarlo
+!SLOW;Lento
+!NORMAL;Normale
+!FAST;Veloce
+/i
+
+:SLOW
+#SET FL30
+-Tutto ok?
+-No, eri troppo lento. Devo trovare un altro massaggiatore.
+/i
+#RETURN
+:NORMAL
+#SET FL30
+-Tutto ok?
+-Eri davvero troppo veloce! Devo trovare un altro massaggiatore.
+/i
+#RETURN
+:FAST
+#SET FL29
+-Tutto ok?
+-Era perfetto! Grazie!
+/i
+#RETURN
+#END

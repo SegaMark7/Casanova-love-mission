@@ -1,0 +1,94 @@
+#CLEAR FL30
+#CLEAR FL30
+#CLEAR FL29
+:part1
+#CLEARBKG
+#LOADBKG E@part1
+Elige como lo masajearas
+!part2;Despacio
+!part2;Normalmente
+!part3;Rapido
+/i
+
+:part2
+#CLEARBKG
+#LOADBKG E@part2
+Elige como lo masajearas
+!part5;Despacio
+!part3;Normalmente
+!part4;Rapido
+/i
+
+:part3
+#CLEARBKG
+#LOADBKG E@part3
+Elige como lo masajearas
+!part6;Despacio
+!part6;Normalmente
+!part6;Rapido
+/i
+
+:part4
+#CLEARBKG
+#LOADBKG E@part4
+Elige como lo masajearas
+!part6;Despacio
+!part6;Normalmente
+!part7;Rapido
+/i
+
+:part5
+#CLEARBKG
+#LOADBKG E@part5
+Elige como lo masajearas
+!part6;Despacio
+!part6;Normalmente
+!part6;Rapido
+/i
+
+:part6
+#CLEARBKG
+#LOADBKG E@part6
+Elige como lo masajearas
+!part8;Despacio
+!part7;Normalmente
+!part7;Rapido
+/i
+
+:part7
+#CLEARBKG
+#LOADBKG E@part7
+Elige como lo masajearas
+!SLOW;Despacio
+!NORMAL;Normalmente
+!FAST;Rapido
+/i
+
+:part8
+#CLEARBKG
+#LOADBKG E@part8
+Elige como lo masajearas
+!SLOW;Despacio
+!NORMAL;Normalmente
+!FAST;Rapido
+/i
+
+:SLOW
+#SET FL30
+-?Ha estado bien?
+-No, estuviste muy lento. Tendre que buscarme otro masajista.
+/i
+#RETURN
+:NORMAL
+#SET FL30
+-?Ha estado bien?
+-?Fuiste demasiado rapido! Tendre que buscarme otro masajista.
+/i
+#RETURN
+:FAST
+#SET FL29
+-?Ha estado bien?
+-?Perfecto! ?Gracias!
+/i
+#RETURN
+#END

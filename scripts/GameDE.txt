@@ -1,0 +1,504 @@
+:000
+#CLEARBKG
+#LOADBKG A@
+Hi! Ich bins.. Casanova!
+Du hast sicherlich schon gehort, dass ich verruckt nach Frauen bin.
+:001
+Heute hab ich meinen freien Tag.
+Ich denke, dass ich heute zu Hause bleiben und TV gucken werde.
+/i
+#GOTO 006
+:002
+#CLEARBKG
+#LOADBKG A@
+(Was zum..? Wieso bin ich zuruck in meiner Wohnung?)
+(War das alles etwa nur ein Traum?)
+:003
+(Wenn nicht, dann wird Vaximus bald die Weltherrschaft an sich rei?en.)
+(Ich muss irgendwo zwischendrin einen schrecklichen Fehler gemacht haben!)
+/i
+#GOTO 096
+:004
+#CLEARBKG
+#LOADBKG A@
+(Was zum..? Wieso bin ich zuruck in meiner Wohnung?)
+(War das alles etwa nur ein Traum?)
+:005
+(Wenn nicht, dann hei?t das, dass ich die Welt vor Vaximus gerettet habe!)
+(Ich bin ein Held! Keine Frau wird mir ab jetzt widerstehen konnen!)
+/i
+#GOTO 097
+/i
+:006
+#CLEARBKG
+#LOADBKG B@
+Eine mysteriose Blondine erscheint auf dem Bildschirm.
+-Casanova - ich hab eine Mission fur dich!
+:007
+-Was ist los? Wer bist du?
+-Das spielt keine Rolle.. Du hast sicherlich von Emil Vaximus gehort?
+:008
+-Der beruhmte Verbrecher? Naturlich hab ich von ihm gehort.
+-Er hat ein besonders gefahrliches Gerat gestohlen, mit dem er die Welt beherrschen kann. Du musst ihn aufhalten.
+:009
+-Aber warum ich? Ich bin doch nur ein ganz normaler Typ.
+-Deine Fahigkeiten im Umgang mit Frauen sind fur die Mission unentbehrlich..
+:010
+-Aber wo find ich Vaximus?
+-Er wurde als letztes im Underworld Club gesehen.
+:011
+-Es gibt Gerruchte, dass Vaximus mit Raven, der Juwelen Diebin arbeitet. Soll ich sie zuerst befragen?
+-Ich kenne zufallig einen Massagesalon, den Ravon ofters besucht. Was ist dein Plan?
+'Выбор 12
+:012
+!choice19;ICH GEHE IN DEN MASSAGESALON.
+!choice13;ICH GEHE IN DEN UNDERWORLD CLUB.
+/i
+:choice19
+Viel Erfolg, Casanova!
+/i
+#GOTO 019
+:choice13
+Viel Erfolg, Casanova!
+/i
+#GOTO 013
+/i
+:013
+#CLEARBKG
+#LOADBKG C@
+SPATER
+Die Kleine hinter der Bar ist hei?.. Wie gehe ich vor?
+'Выбор 14
+:014
+!choice15;ICH FLIRTE MIT IHR.
+!choice17;ICH STELLE IHR FRAGEN.
+/i
+:choice15
+Ich versuche mich mit ihr zu verabreden.
+/i
+#GOTO 015
+:choice17
+Hmm, uber wen soll ich sie ausfragen?
+/i
+#GOTO 017
+:015
+Sie antwortet, dass sie heute bis zum Ende arbeiten muss.
+Daher frag ich sie nach ihrer Telefonnummer.
+:016
+Sie lachelt und willigt ein.
+Ich verspreche ihr, dass ich sie bald anrufen werde.
+/i
+#GOTO 018
+'Выбор 17
+:017
+eine Auswahl treffen
+!choice18_0;VAXIMUS, DER GEMEINE VERBRECHER.
+!choice18_1;RAVEN, DIE VERFUHRERISCHE DIEBIN.
+/i
+:choice18_0
+Sie antwortet, dass sie Vaximus schon langer nicht mehr gesehen hat.
+/i
+#GOTO 018
+:choice18_1
+Sie antwortet, dass sie Raven noch nie im Club gesehen hat.
+/i
+#GOTO 018
+:018
+Ich denke, hier bin ich durch. Es wird Zeit, dass ich gehe!
+Ich trinke aus und gehe.
+/i
+#GOTO 037
+/i
+:019
+#CLEARBKG
+#LOADBKG D@
+SPATER
+Die Kleine fragt mich, ob ich wegen des Jobs hier sei.
+'Выбор 20
+:020
+!choice21;ICH SAGE JA.
+!choice23;ICH SAGE NEIN.
+/i
+:choice21
+Sie denkt, dass ich der neue Masseur bin.
+/i
+#GOTO 021
+:choice23
+Ich erklare ihr, dass ich nur ein paar Fragen zu einer Person habe..
+/i
+#GOTO 023
+:021
+Hehe, das gefallt mir. Ich liebe es, schone Frauen zu massieren!
+Meine erste Kundin ist zufalligerweise Raven!
+:022
+Wenn ich nur immer so ein Gluck hatte..
+Hoffentlich merkt Raven nichts von meiner Tarnung.
+/i
+#GOTO 025
+'Выбор 23
+:023
+eine Auswahl treffen
+!choice24_0;VAXIMUS, DER GEMEINE VERBRECHER.
+!choice24_1;RAVEN, DIE VERFUHRERISCHE DIEBIN.
+/i
+:choice24_0
+Sie antwortet, dass sie noch nie etwas von einem Vaximus gehort hat.
+/i
+#GOTO 024
+:choice24_1
+Sie antwortet, dass sie gro?e Probleme kriegt, wenn sie mir etwas erzahlt.
+/i
+#GOTO 024
+:024
+Es scheint, dass ich hier nicht weiterkomme.
+Es wird Zeit zu verschwinden. Ich gehe aus dem Laden.
+/i
+#GOTO 037
+/i
+:025
+#CLEARBKG
+#LOADBKG E@
+-Hallo! Hast du spezielle Wunsche?
+-Ja, sei ganz zartlich. Heute will ich entspannen.
+/i
+:026
+#PROGCALL MG1_DE
+#IF FL27 #GOTO 027
+#IF FL30 #GOTO 030
+#IF FL30 #GOTO 030
+/i
+:027
+#PROGCALL MG2_DE
+#IF FL30 #GOTO 030
+#IF FL28 #GOTO 028
+#IF FL30 #GOTO 030
+/i
+:028
+#PROGCALL MG3_DE
+#IF FL30 #GOTO 030
+#IF FL30 #GOTO 030
+#IF FL29 #GOTO 029
+:029
+Raven ist sehr zufrieden. Sie dankt mir und geht dann.
+Ich werde ihr folgen.
+/i
+#GOTO 034
+:030
+#CLEARBKG
+#LOADBKG E@
+Raven steht auf und geht - unzufrieden mit meinem Service.
+Ich werde ihr folgen.
+/i
+:031
+#CLEARBKG
+#LOADBKG F@
+Dummerweise, stellen mir ein paar Typen in einer Gasse einen Hinterhalt.
+-Ich nehme an, du bist Casanova? Da bist du wohl in meine Falle getappt!
+:032
+-Moment.. Du bist Emil Vaximus!
+-Richtig! Du kommst mir ab jetzt nicht mehr in die Quere!
+:033
+-Und wieso das?
+-Weil ich dich entfuhren werde!
+/i
+#GOTO 040
+:034
+#CLEARBKG
+#LOADBKG F@
+Dummerweise, stellen mir ein paar Typen in einer Gasse einen Hinterhalt.
+-Ich nehme an, du bist Casanova? Da bist du wohl in meine Falle getappt!
+:035
+-Moment.. Du bist Emil Vaximus!
+-Richtig! Du kommst mir ab jetzt nicht mehr in die Quere!
+:036
+-Und wieso das?
+-Weil ich dich entfuhren werde!
+/i
+#GOTO 043
+:037
+#CLEARBKG
+#LOADBKG F@
+Dummerweise, stellen mir ein paar Typen in einer Gasse einen Hinterhalt.
+-Ich nehme an, du bist Casanova? Da bist du wohl in meine Falle getappt!
+:038
+-Moment.. Du bist Emil Vaximus!
+-Richtig! Du kommst mir ab jetzt nicht mehr in die Quere!
+:039
+-Und wieso das?
+-Weil ich dich entfuhren werde!
+/i
+#GOTO 046
+/i
+:040
+#CLEARBKG
+#LOADBKG G@
+Vaximus fesselt mich und verschleppt mich in sein geheimes Versteck.
+-Sobald ich deine Gedanken geloscht habe, ist der Sieg mein!
+:041
+-Nein, bitte! Raven, bitte halt ihn auf!
+-Wieso sollte ich? Du konntest mich ja nicht einmal richtig massieren!
+:042
+Ich hab die Mission vergeigt. Es ist vorbei!
+-Ha! Dann schlaf gut, Casanova!
+/i
+#GOTO 002
+:043
+#CLEARBKG
+#LOADBKG G@
+Vaximus fesselt mich und verschleppt mich in sein geheimes Versteck.
+-Sobald ich deine Gedanken geloscht habe, ist der Sieg mein!
+:044
+-Nein, bitte! Raven, bitte halt ihn auf!
+-Du bist ein fahiger Masseur.. Und ich denke, ich werde fur dich noch Verwendung haben.
+:045
+Raven fragt Vaximus, ob sie mich in ihr Zimmer mitnehmen kann.
+-Raven, dir kann ich keinen Wunsch abschlagen. Die Entscheidung liegt bei dir.
+/i
+#GOTO 048
+:046
+#CLEARBKG
+#LOADBKG G@
+Vaximus fesselt mich und verschleppt mich in sein geheimes Versteck.
+-Sobald ich deine Gedanken geloscht habe, ist der Sieg mein!
+:047
+Ich hab die Mission vergeigt. Es ist vorbei!
+-Ha! Dann schlaf gut, Casanova!
+/i
+#GOTO 002
+/i
+:048
+#CLEARBKG
+#LOADBKG H@
+In Ravens Zimmer.
+-Su?er, was konnten wir zu zweit machen?
+'Выбор 49
+:049
+!choice54;KUSSEN.
+!choice50;REDEN
+/i
+:choice54
+Hey, die gleiche Idee hatte ich auch..
+/i
+#GOTO 054
+:choice50
+Meinst du das ernst? Wir sind hier ganz allein und du willst mit mir reden?
+/i
+#GOTO 050
+:050
+-Ich frag mich nur.. Wie will Vaximus die Weltherrschaft an sich rei?en?
+-Er ist in den Besitz der Liebeskanone gekommen und will damit alle weiblichen Politikerinnen kontrollieren.
+:051
+-Liebeskanone? Was ist das?
+-Sie funktioniert wie Armors Liebespfeile. Getroffen von ihr, wird dich das Opfer fur immer und ewig lieben.
+:052
+-Oh, das hort sich ziemlich scharf an.
+-In der Tat. Ich denke, die ist mindestens ein paar Millionen wert.
+:053
+-Warum stiehlst du sie dann nicht von Vaximus und verkaufst sie? Ich werd dir dabei helfen!
+-Hmm, die Idee gefallt mir.. Ok, lass uns das machen!
+/i
+#GOTO 060
+/i
+:054
+#CLEARBKG
+#LOADBKG I@
+Was soll ich sagen.. Ich stand schon immer auf richtige Luder! ;-)
+Und sie ist richtig geil!
+:055
+-Oh, Raven.. Du bist unglaublich!
+-Casanova, so kommst du bei mir nicht weit.
+:056
+Hmm, sie will es auf die harte Tour haben.
+Mal schaun, ob ich aus der Situation noch heil herauskomme.
+:057
+-Nimm mir die Fesseln ab. Dann haben wir sicherlich viel mehr Spa? zusammen!
+-Das hattest du wohl gerne. Ich bring dich zuruck zu Vaximus.
+:058
+-Warum? Stehst du nicht auf mich?
+-Vielleicht ein bi?chen, aber Vaximus gefallt mir mehr.
+:059
+-Wie kannst du nur so herzlos sein?
+-Weil das der einzige Weg ist, reich zu werden. Los, wir gehen zu Vaximus.
+/i
+#GOTO 042
+/i
+:060
+#CLEARBKG
+#LOADBKG J@
+(Zusammen uberwaltigen wir Vaximus.)
+-Ubergib mir die Liebeskanone, Vaximus!
+:061
+-Du horst besser auf sie, sonst..!
+-Ich ergebe mich! Verschont mich!
+:062
+-Was sollen wir mit ihm machen, Raven?
+-Ich wei? nicht.. Du entscheidest!
+'Выбор 63
+:063
+!choice64;FREILASSEN.
+!choice65;POLIZEI RUFEN.
+/i
+:choice64
+Ihr verschont mich? Warum?
+/i
+#GOTO 064
+:choice65
+Nein! Ich will nicht ins Gefangnis!
+/i
+#GOTO 065
+:064
+-Lass dir das eine Lektion sein. Jetzt geh bevor ich meine Meinung ander!
+-Schnell, Casanova. Lass uns verschwinden!
+/i
+#GOTO 066
+:065
+#CLEARBKG
+#LOADBKG J@
+#SET FL99
+-Das hattest du dir vor all deinen Verbrechen uberlegen sollen!
+-Schnell, Casanova. Lass uns verschwinden!
+/i
+:066
+#CLEARBKG
+#LOADBKG K@
+(Wir steigen ins Auto und verschwinden vom Versteck.)
+-Hehehe. Wir sind ein gro?artiges Team!
+:067
+-Du bist wirklich die Beste, Raven!
+(Hmm, aber was nun..?)
+:068
+(Ich konnte Raven beim Verkauf der Kanone helfen und den Erlos mit ihr teilen.)
+(Das wird bestimmt genug Kohle fur ein Leben in Luxus.)
+:069
+(Aber das ist nur eine Option..)
+(Die Kanone ist in Reichweite. Ich konnte sie auch an Raven ausprobieren.)
+:070
+(Sie verfallt mir und ich hab die Kanonen ganz fur mich allein.)
+(Hmm, was soll ich machen? Die Kanone mit Raven verkaufen oder fur mich behalten?)
+'Выбор 71
+:071
+!choice78;ICH BEHALTE DIE KANONE.
+!choice72;VERKAUFEN.
+/i
+:choice78
+(Es gibt keine andere Wahl.. Ich verrate Raven.)
+/i
+#GOTO 078
+:choice72
+(Es gibt nur eine Wahl.. Ich helfe Raven beim Verkauf.)
+/i
+#GOTO 072
+/i
+:072
+#CLEARBKG
+#IF FL99 #LOADBKG P@
+#IF NOT FL99 #LOADBKG L@
+#CLEAR FL99
+EIN JAHR SPATER
+(Und hier bin ich. Unglaublich reich und glucklich.)
+:073
+(Und Raven.. Sie ist jetzt meine Freundin.)
+(Wir leben zu Hause in einem Haus am Meer.)
+:074
+(Und das Leben mit ihr ist gro?artig!)
+-Hi, Schatz! Wie gehts dir heute?
+:075
+-Wenn du in meiner Nahe bist, gehts mir immer gut!
+-Hmm.. Wieso schaust du mich so an?
+:076
+-Ich komme immer auf lusterne Gedanken, wenn ich dich sehe..
+-Hahaha! Daran mussen wir dann was machen, oder?
+:077
+-Kuss mich, Schatz!
+(Plotzlich fuhle ich mich schwindlig.)
+/i
+#GOTO 004
+/i
+:078
+#CLEARBKG
+#LOADBKG M@
+-Sorry, Raven, aber ich brauch die Kanone fur mich.
+-Du begehst einen gro?en Fehler!
+:079
+-Wie meinst du das?
+-Du wirst die Kanone ohne meine Hilfe niemals verkaufen konnen. Was willst du mit ihr machen?
+:080
+(Das ist eine gute Frage. Ich muss uberlegen..)
+(Ich sollte die Kanone an die Blondine geben, die mich fur diesen Auftrag angeheuert hat.)
+:081
+(Oder, ich nutze sie, um jede scharfe Frau auf diesem Planeten klar zu machen.)
+(Schlie?lich dreht sich mein ganzes Leben nur um Frauen.)
+:082
+(Hmm, das ist eine schwierige Frage. Wie soll ich mich nur entscheiden?)
+(Soll ich die Kanone an die Blondine geben oder fur mich nutzen?)
+'Выбор 83
+:083
+!choice84;FUR MICH BEHALTEN.
+!choice90;ICH GEB SIE AN DIE BLONDINE.
+/i
+:choice84
+(Ja, auf jeden Fall.. So mach ich jede Frau klar!)
+/i
+#GOTO 084
+:choice90
+(Ich kontaktiere sie und wir verabreden uns an einem geheimen Ort.)
+/i
+#GOTO 090
+/i
+:084
+#CLEARBKG
+#LOADBKG N@
+EIN JAHR SPATER
+(Und hier bin ich. Der scharfste Typ des Planeten.)
+:085
+(Meiner Kanone widersteht keine Frau der Welt, hehehe!)
+(Nach all den Jahren bin ich nun ein wahrer Casanova geworden.)
+:086
+(Das Leben ist unglaublich geil!!)
+(Die Frauen stehen Schlange, um mit mir ausgehen zu durfen.)
+:087
+(Blondinen, Brunetten, Rothaarige.. Ich such mir einfach die Geilste aus und vergnuge mich!)
+(Schau dir diese Biester an! Sind sie nicht wunderschon?)
+:088
+-Ok, Ladies.. Vergnugen wir uns!
+(Das wird wieder ein spannender Abend.)
+:089
+(Moment.. Hier stimmt was nicht..!)
+(Plotzlich fuhle ich mich schwindlig.)
+/i
+#GOTO 004
+/i
+:090
+#CLEARBKG
+#LOADBKG O@
+(Die Blondine verschwendet keine Zeit.)
+-Oh, Casanova.. Lass mich dir zeigen, wie stolz ich auf dich bin.
+:091
+-Sehr, sehr stolz, wie ich sehe.
+-Hahaha! Das ist doch erst die Aufwarmphase, Su?er!
+:092
+-Das hort sich vielversprechend an!
+-Oh, Casanova..
+:093
+-Ich konnte mich glatt ans Leben als Geheimagent gewohnen.
+-Vielleicht hab ich bald eine neue Mission fur dich.
+:094
+-Daruber konnen wir uns spater unterhalten. Jetzt vergnugen wir uns erstmal!
+(Das wird wieder ein spannender Abend.)
+:095
+(Moment.. Hier stimmt was nicht..!)
+(Plotzlich fuhle ich mich schwindlig.)
+/i
+#GOTO 004
+:096
+Versuch es nochmal und erarbeite dir ein besseres Ergebnis!
+ENDE
+/i
+#RETURN
+:097
+Versuch es nochmal. Es gibt noch andere Losungen!
+HAPPY END
+/i
+#RETURN
+#END
+#END

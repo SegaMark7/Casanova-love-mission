@@ -1,0 +1,94 @@
+#CLEAR FL30
+#CLEAR FL30
+#CLEAR FL29
+:part1
+#CLEARBKG
+#LOADBKG E@part1
+Choisissez comment vous la massez
+!part4;Langsam
+!part4;Normalerweise
+!part3;Schnell
+/i
+
+:part2
+#CLEARBKG
+#LOADBKG E@part2
+Choisissez comment vous la massez
+!part3;Langsam
+!part4;Normalerweise
+!part3;Schnell
+/i
+
+:part3
+#CLEARBKG
+#LOADBKG E@part3
+Choisissez comment vous la massez
+!part5;Langsam
+!part5;Normalerweise
+!part5;Schnell
+/i
+
+:part4
+#CLEARBKG
+#LOADBKG E@part4
+Choisissez comment vous la massez
+!part6;Langsam
+!part7;Normalerweise
+!part5;Schnell
+/i
+
+:part5
+#CLEARBKG
+#LOADBKG E@part5
+Choisissez comment vous la massez
+!part7;Langsam
+!part8;Normalerweise
+!part7;Schnell
+/i
+
+:part6
+#CLEARBKG
+#LOADBKG E@part6
+Choisissez comment vous la massez
+!SLOW;Langsam
+!part7;Normalerweise
+!part7;Schnell
+/i
+
+:part7
+#CLEARBKG
+#LOADBKG E@part7
+Choisissez comment vous la massez
+!part8;Langsam
+!NORMAL;Normalerweise
+!FAST;Schnell
+/i
+
+:part8
+#CLEARBKG
+#LOADBKG E@part8
+Choisissez comment vous la massez
+!SLOW;Langsam
+!NORMAL;Normalerweise
+!FAST;Schnell
+/i
+
+:SLOW
+#SET FL30
+-War es gut so?
+-Nein, du warst viel zu langsam. Ich suche mir besser einen anderen Masseur.
+/i
+#RETURN
+:NORMAL
+#SET FL30
+-War es gut so?
+-Du warst viel zu hektisch! Ich suche mir besser einen anderen Masseur.
+/i
+#RETURN
+:FAST
+#SET FL29
+-War es gut so?
+-Das war perfekt. Danke!
+/i
+#RETURN
+#END

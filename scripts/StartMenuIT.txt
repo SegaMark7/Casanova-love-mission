@@ -1,0 +1,84 @@
+#CLEAR FL1
+#CLEAR FL2
+#CLEAR FL3
+#CLEAR FL4
+#SET FL4
+#SET FL1013
+#CLEARBKG
+#LOADBKG title@@
+:menu
+Scegli una delle 5 voci di menu
+!newGame;1.Inizia il gioco
+!music;2.Selezione musicale
+!sound;3.Suono
+!instruction;4.Istruzione
+!information;5.Informazione
+/i
+
+:music
+Scegli una delle 4 tracce
+!zCasanov;1.zCasanov
+!zGirl;2.zGirl
+!zJack;3.zJack
+!zTadzhik;4.zTadzhik
+/i
+:zCasanov
+#SET FL1
+#GOTO menu
+:zGirl
+#SET FL2
+#GOTO menu
+:zJack
+#SET FL3
+#GOTO menu
+:zTadzhik
+#SET FL4
+#GOTO menu
+
+:sound
+Attenzione, se selezioni "Attiva musica", non potrai disattivarla fino al riavvio del gioco. La musica e attiva per impostazione predefinita
+!soundON;Riproduci musica
+!soundOFF;Spegni la musica
+/i
+:soundON
+#SET FL1013
+#GOTO menu
+:soundOFF
+#CLEAR FL1013
+#STOPMUSIC
+#GOTO menu
+
+:instruction
+Lo scopo del gioco e molto semplice: farsi scopare. Il gioco consiste in due modalita: fumetti interattivi o modalita arcade ..Per confermare la scelta premi A,B o C. Le frecce e I campi lampeggianti significano possibilita' di scelta (RIGHT/LEFT). Buona caccia!
+/i
+#GOTO menu
+
+:information
+Casanova sex toys v.5.7.9.19.20
+Ported by SegaMark
+Donate: www.donationalerts.com/r/segamark6
+All Rights Reserved (c)
+DirtyConverter v.5.0.8590.34411
+/i
+#GOTO menu
+
+:newGame
+#IF NOT FL1013 #RETURN
+#IF FL1 #GOTO LzCasanov
+#IF FL2 #GOTO LzGirl
+#IF FL3 #GOTO LzJack
+#IF FL4 #GOTO LzTadzhik
+
+:LzCasanov
+#LOOPMUSIC zCasanov
+#RETURN
+:LzGirl
+#LOOPMUSIC zGirl
+#RETURN
+:LzJack
+#LOOPMUSIC zJack
+#RETURN
+:LzTadzhik
+#LOOPMUSIC zTadzhik
+#RETURN
+#END

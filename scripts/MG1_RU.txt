@@ -1,0 +1,94 @@
+#CLEAR FL27
+#CLEAR FL30
+#CLEAR FL30
+:part1
+#CLEARBKG
+#LOADBKG E@part1
+Выбирай как будешь её массировать
+!part4;Медленно
+!part4;Нормально
+!part4;Быстро
+/i
+
+:part2
+#CLEARBKG
+#LOADBKG E@part2
+Выбирай как будешь её массировать
+!part4;Медленно
+!part4;Нормально
+!part3;Быстро
+/i
+
+:part3
+#CLEARBKG
+#LOADBKG E@part3
+Выбирай как будешь её массировать
+!part6;Медленно
+!part5;Нормально
+!part4;Быстро
+/i
+
+:part4
+#CLEARBKG
+#LOADBKG E@part4
+Выбирай как будешь её массировать
+!part7;Медленно
+!part5;Нормально
+!part7;Быстро
+/i
+
+:part5
+#CLEARBKG
+#LOADBKG E@part5
+Выбирай как будешь её массировать
+!part8;Медленно
+!part8;Нормально
+!part8;Быстро
+/i
+
+:part6
+#CLEARBKG
+#LOADBKG E@part6
+Выбирай как будешь её массировать
+!part8;Медленно
+!NORMAL;Нормально
+!FAST;Быстро
+/i
+
+:part7
+#CLEARBKG
+#LOADBKG E@part7
+Выбирай как будешь её массировать
+!SLOW;Медленно
+!NORMAL;Нормально
+!FAST;Быстро
+/i
+
+:part8
+#CLEARBKG
+#LOADBKG E@part8
+Выбирай как будешь её массировать
+!SLOW;Медленно
+!NORMAL;Нормально
+!FAST;Быстро
+/i
+
+:SLOW
+#SET FL27
+-Ну как?
+-Очень хорошо. Ну а теперь быстро, как только ты можешь!
+/i
+#RETURN
+:NORMAL
+#SET FL30
+-Ну как?
+-А ты быстрый! Мне это не понравилось. Я найду массажиста поопытнее.
+/i
+#RETURN
+:FAST
+#SET FL30
+-Ну как?
+-Слишком медленно. Мне это не понравилось. Я найду массажиста поопытнее.
+/i
+#RETURN
+#END
